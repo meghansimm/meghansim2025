@@ -1,0 +1,81 @@
+/* 
+=TOP NAV ILLUSTRATION BOLD
+==================================*/
+
+
+nav.top-nav a:nth-child(2) {
+  font-weight: 500;
+}
+
+.nav-wrapper li:nth-child(2) a {
+  font-weight: 500;
+}
+
+/* 
+=IMAGE GALLERY
+==================================*/
+.img-gallery {
+  width: 81.5%; height: 100vh;
+  display: flex; /* make the image gallery a flex container */
+  flex-wrap: wrap; /* control the image gallery's flex behavior */
+  margin-left: auto;
+}
+
+.img-wrapper {
+  width: 100%;
+  margin: -10px 0;
+  padding: 15px;
+
+}
+.img-gallery .start-line {
+  width: 100%;
+  margin: 15px 15px 5px 15px;
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 1px;
+  cursor: pointer;
+  display: block;
+}
+
+.img-wrapper div {
+  border-radius: 5px;
+  width: 100%;
+  transition: .5s ease-in-out;
+}
+
+.img-wrapper div:hover {
+  background: 
+  linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+  linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
+  linear-gradient(0deg, #333 50%, transparent 0) repeat-y,
+  linear-gradient(0deg, #333 50%, transparent 0) repeat-y;
+  background-size: 6px 1px, 6px 1px, 1px 6px, 1px 6px;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  animation: linearGradientMove .2s infinite linear;
+}
+@keyframes linearGradientMove {
+  100% {
+      background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+  }
+}
+
+figcaption {
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid black;
+}
+
+figcaption span {
+  font-weight: 300;
+  color: rgb(155 155 155);
+}

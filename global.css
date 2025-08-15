@@ -1,0 +1,528 @@
+:root {
+  -webkit-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+::selection {
+  background-color: magenta;
+  color: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: rgb(250 250 250);
+  margin: 0;
+  font: 300 13px/1.5 "Inclusive Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+div.nav1 {
+  display: flow-root;
+  position: fixed;
+  width: 18%; height: 100vh;
+  margin: 12px 10px;
+  border-right: 1px solid black;
+}
+
+.img-gallery {
+  width: 81.5%; height: 100vh;
+  display: flex; /* make the image gallery a flex container */
+  flex-wrap: wrap; /* control the image gallery's flex behavior */
+  margin-left: auto;
+}
+
+/* 
+=DECORATIVE NAME
+==================================*/
+div.name-wrapper {
+  margin: 0;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 3000;
+
+}
+div.name {
+  display: flex;
+  position: absolute;
+  animation: slideAcross 450s infinite;
+  margin: 0;
+}
+@keyframes slideAcross {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    top: calc(-600px) ;
+    left: calc(100% - 50px); /* Move to the right edge, accounting for element width */
+  }
+}
+
+div.name h1 {
+  font-size: 50px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 5px;
+
+  width: 60px;
+  height: 85px;
+}
+div.name :nth-child(1) {
+  transform: rotate(10deg);
+  margin-top: 5vh; margin-left: 7vw;
+  background-color:lightsteelblue;
+  color:magenta ;
+}
+div.name :nth-child(2) {
+  transform: rotate(-35deg);
+  margin-top: 20vh; margin-left: 10vw;
+  background-color:yellow;
+  color:orangered ;
+}
+div.name :nth-child(3) {
+  transform: rotate(3deg);
+  margin-top: 55vh; margin-left: -15vw;
+  background-color: orangered;
+  color:mistyrose ;
+}
+div.name :nth-child(4) {
+  transform: rotate(-15deg);
+  margin-top: 75vh; margin-left: 35vw;
+  background-color:magenta;
+  color:yellow;
+}
+div.name :nth-child(5) {
+  transform: rotate(20deg);
+  margin-top: 10vh; margin-left: 20vw;
+  background-color:lightsteelblue;
+  color: orangered;
+}
+div.name :nth-child(6) {
+  transform: rotate(-30deg);
+  margin-top: -1vh; margin-left: 14vw;
+  background-color:orangered;
+  color:yellow;
+}
+/* 
+=HEAD AND SUBHEAD 
+==================================*/
+h1 {
+  display: flex;
+   font-size: 13px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(255 255 255/ 50%);
+  backdrop-filter: blur(5px);
+
+  border: 1px solid black;
+  padding: 6px 13px;
+  border-radius: 20px;
+  width: 110px;
+  justify-content: center;
+  margin: 0;
+  cursor: pointer;
+  
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+h2 a {
+  color: black;
+}
+h2 a:hover{
+  background: magenta;
+  color: white;
+  border-radius: 3px;
+}
+.nav1 .accordion p a {
+  text-decoration: underline;
+  padding: 0;
+  display: inline-block;
+}
+.nav1 .accordion p a:hover {
+  background: magenta;
+  color: white;
+  border-radius: 3px;
+}
+
+label:hover ~ h2 span {
+  background-color: magenta;
+  color: white;
+  border-radius: 3px;
+}
+
+h1:hover {
+background: 
+   linear-gradient( magenta 0%, orangered 25%, yellow 50%, lightsteelblue 75%, magenta 100%) 
+   0 0/100% 200%;
+   animation: a 1.5s linear infinite;
+
+border: 1px solid #00000000;
+font-weight: 600;
+}
+
+@keyframes a {
+  to {background-position:0 -200%}
+}
+h1:hover a {
+  font-weight: 500;
+  color: white;
+}
+
+h2 {
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.more {
+  display: contents;
+  color: rgb(155 155 155);
+  cursor: pointer;
+  background: transparent;
+  vertical-align: middle;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.less {
+  display: none;
+  color: rgb(155 155 155);
+  cursor: pointer;
+  background: transparent;
+  vertical-align: middle;
+  border-radius: 3px;
+  margin-top: 10px;
+  
+}
+
+h2 span:hover {
+  background: magenta;
+  color: white;
+  border-radius: 3px;
+}
+
+label {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+
+.accordion {
+  font-size: 13px;
+  font-weight: 300;
+  color: black;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: 0.5s ease-in-out;
+  padding-right: 10px;
+  margin: -10px 0 0;
+}
+input {
+display: none;
+}
+
+input:checked ~ .accordion {
+  color: black;
+  max-height: 100vh
+}
+
+input:checked ~ .desc {
+  display: none;
+}
+
+input:checked + .accordion + .more-wrapper .more {
+  display: none;
+}
+
+input:checked + .accordion + .more-wrapper .less {
+  display: contents;
+}
+
+input:checked ~ .side-nav {
+  display: none;
+}
+
+
+.accordion a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  padding: 1px 0;
+}
+
+.accordion p {
+  line-height: 1.5;
+}
+
+.accordion a span:hover {
+  border-radius: 3px;
+  background: magenta;
+  color: white;
+}
+
+.accordion figure {
+  margin-left: 0px; margin-bottom: 10px; margin-top: 0px;
+  width: 100%;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.more-wrapper {
+  margin-top: 10px;
+  margin-bottom: -21px;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  border-bottom: solid 1px black;
+}
+
+
+
+/* 
+=SIDE NAV
+==================================*/
+nav.side-nav {
+  font-size: 13px;
+  font-weight: 300;
+  width: 17%;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+nav.side-nav a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black ;
+  padding: 7px 0;
+
+}
+
+nav.side-nav a span{
+  background: transparent;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+nav.side-nav a:hover span {
+  background: magenta;
+  color: white;
+}
+
+nav.side-nav a:first-child {
+  border-top: 1px solid black;
+}
+
+
+
+/* 
+=TOP NAV
+==================================*/
+div.nav2 {
+  display: flex;
+  position: fixed;
+  right: 0;
+  width: 81.5%;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+nav.top-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+nav.top-nav a {
+  display: flex;
+  
+  font-size: 13px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(255 255 255/ 50%);
+  backdrop-filter: blur(5px);
+
+  border: 1px solid black;
+  padding: 6px 13px;
+  border-radius: 20px;
+}
+
+nav.top-nav a:hover {
+  font-weight: 500;
+  background-color: magenta;
+  color: white;
+  border-color: magenta;
+}
+
+
+
+
+/* 
+=SWITCH STYLE 
+==================================*/
+/* .switch {
+    position: fixed;
+    bottom: 2%;
+    display: flex;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; width: 26px; left: 4px; bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(255, 0, 204);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } */
+
+
+
+
+/* 
+=FOOTER
+==================================*/
+.footer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {
+  margin: 30px 0 40px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 300;
+  color: black;
+}
+.footer p span{
+  color: rgb(155 155 155);
+}
+/* 
+=MOBILE NAV
+==================================*/
+.mobile-nav {
+  display: none;
+  position: fixed;
+  background-color: rgb(255 255 255/ 70%);
+  backdrop-filter: blur(5px);
+  margin: 10px 25px;
+  border-radius: 5px;
+  border: 1px black solid;
+  left: 0; right: 0;
+  z-index: 20;
+
+
+}
+
+.nav-wrapper {
+
+  /* background-color: aqua; */
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 7px 15px;
+}
+
+.nav-wrapper a:active {
+  color: magenta;
+}
+
+
+li {
+  list-style: none;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.mobile-nav h1 {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  backdrop-filter: none;
+  border-radius: 0%;
+  border-bottom: 1px black solid;
+  margin: 3px 15px 0px;
+  width: auto;
+
+  color: black;
+  text-decoration: none;
+}
+
+
+/* 
+=MOBILE DESC
+==================================*/
+.subhead-mobile {
+  display: none;
+}
+
+
+
+
+
+

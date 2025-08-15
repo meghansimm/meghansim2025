@@ -1,0 +1,62 @@
+
+
+div.carousel__viewport {
+  display: none;
+}
+
+div.fancybox__counter {
+  display: none;
+}
+
+button.carousel__button.fancybox__button--zoom {
+  display: none
+}
+
+button.carousel__button.fancybox__button--slideshow {
+  display: none
+}
+
+button.carousel__button.fancybox__button--fullscreen {
+  display: none
+}
+
+button.carousel__button.fancybox__button--thumbs {
+  display: none
+}
+
+div.fancybox__viewport {
+  z-index: 5000;
+  background-color: rgb(250 250 250/ 85%);
+  backdrop-filter: blur(10px);
+}
+
+.fancybox__toolbar {
+  background: none;
+  text-shadow: none;
+  padding: 10px;
+}
+
+.fancybox__container {
+  --carousel-button-svg-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.4));
+}
+
+.fancybox__backdrop {
+  background: none;
+}
+
+button.carousel__button {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(200 200 200);
+  border-radius: 50px;
+}
+
+button.carousel__button.fancybox__button--close {
+  width: 30px;
+  height: 30px;
+
+}
+
+button.carousel__button:hover {
+  background-color: magenta;
+}

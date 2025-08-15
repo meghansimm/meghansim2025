@@ -1,0 +1,133 @@
+@media (max-width: 991.98px) {
+  * {
+    font-size: 13px;
+  }
+
+
+  .mobile-nav {
+    display: inline-block;
+  }
+
+  .img-gallery {
+    width: 100%;
+  }
+
+  div.nav1, div.nav2 {
+  display: none;
+ }
+
+ .img-gallery .start-line {
+  margin-top: 35px;
+  visibility: hidden;
+ }
+
+h1:active a {
+  color: magenta;
+  }
+h1:hover a {
+    color: magenta;
+    font-weight: 700;
+  }
+
+  div.name :nth-child(5) {
+  transform: rotate(20deg);
+  margin-top: 20vh; margin-left: 30vw;
+  background-color:lightsteelblue;
+  color:olive;
+}
+
+  div.name :nth-child(6) {
+  transform: rotate(-30deg);
+  margin-top: -5vh; margin-left: -20vw;
+  background-color:orangered;
+  color:yellow;
+}
+  h1:hover {
+    background: none;
+  }
+
+  div.name h1 {
+  font-size: 30px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 5px;
+
+  width: 40px;
+  height: 65px;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.subhead-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.subhead {
+  display: none;
+}
+
+p.head {
+  font-size: 30px;
+}
+div.head {
+  border-left: none;
+  border-top: solid 1px black;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0 0;
+}
+
+.footer p {
+  font-size: 10px;
+}
+
+.footer p span {
+  font-size: 10px;
+}
+
+div.name :nth-child(1) {
+  transform: rotate(10deg);
+  margin-top: 10vh; margin-left: -2vw;
+  background-color:lightsteelblue;
+  color:magenta ;
+}
+div.name :nth-child(2) {
+  transform: rotate(-35deg);
+  margin-top: 30vh; margin-left: 20vw;
+  background-color:yellow;
+  color:orangered ;
+}
+div.name :nth-child(3) {
+  transform: rotate(3deg);
+  margin-top: 55vh; margin-left: -20vw;
+  background-color: orangered;
+  color: lightpink ;
+}
+div.name :nth-child(4) {
+  transform: rotate(-15deg);
+  margin-top: 40vh; margin-left: 45vw;
+  background-color:magenta;
+  color:lightsteelblue;
+}
+div.name :nth-child(5) {
+  transform: rotate(20deg);
+  margin-top: 80vh; margin-left: 1vw;
+  background-color:lightsteelblue;
+  color:olive;
+}
+div.name :nth-child(6) {
+  transform: rotate(-30deg);
+  margin-top: -5vh; margin-left: -3vw;
+  background-color:orangered;
+  color:yellow;
+}
+
+
+  
+}
