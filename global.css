@@ -22,7 +22,7 @@
 body {
   background-color: rgb(250 250 250);
   margin: 0;
-  font: 300 13px/1.5 "Inclusive Sans", sans-serif;
+  font: 300 13px/1.5 "Inclusive Sans",'Helvetica Neue', system-ui, sans-serif;
   text-decoration: none;
   color: black;
   width: 100%;
