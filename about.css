@@ -44,39 +44,22 @@ img {
   line-height: 1.5;
 }
 
-p.head {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 1.2;
+p span {
+  font-weight: 500;
 }
 
-p.head a {
+p a {
   color: black;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 13px;
   line-height: 1.2;
 }
 
-p.head a:hover {
+p a:hover {
   border-radius: 3px;
   background: magenta;
   color: white;
 }
 
-p.desc a {
-  color: black;
-}
-
-p.desc a:hover{
-  border-radius: 3px;
-  background: magenta;
-  color: white;
-}
-
-p.desc {
-  margin-top: 20px;
-}
 
 .links {
   display: flex;
