@@ -38,7 +38,7 @@ h1:hover a {
 
   div.name :nth-child(6) {
   transform: rotate(-30deg);
-  margin-top: -5vh; margin-left: -20vw;
+  margin-top: 0vh; margin-left: -20vw;
   background-color:orangered;
   color:yellow;
 }

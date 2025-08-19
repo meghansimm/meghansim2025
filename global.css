@@ -86,31 +86,31 @@ div.name h1 {
 }
 div.name :nth-child(1) {
   transform: rotate(10deg);
-  margin-top: 5vh; margin-left: 7vw;
+  margin-top: 12vh; margin-left: 12vw;
   background-color:lightsteelblue;
   color:magenta ;
 }
 div.name :nth-child(2) {
   transform: rotate(-35deg);
-  margin-top: 20vh; margin-left: 10vw;
+  margin-top: 30vh; margin-left: 15vw;
   background-color:yellow;
   color:orangered ;
 }
 div.name :nth-child(3) {
   transform: rotate(3deg);
-  margin-top: 55vh; margin-left: -15vw;
+  margin-top: 55vh; margin-left: -30vw;
   background-color: orangered;
   color:mistyrose ;
 }
 div.name :nth-child(4) {
   transform: rotate(-15deg);
-  margin-top: 75vh; margin-left: 35vw;
+  margin-top: 75vh; margin-left: 50vw;
   background-color:magenta;
   color:yellow;
 }
 div.name :nth-child(5) {
   transform: rotate(20deg);
-  margin-top: 10vh; margin-left: 20vw;
+  margin-top: 18vh; margin-left: 10vw;
   background-color:lightsteelblue;
   color: orangered;
 }
