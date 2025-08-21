@@ -29,17 +29,14 @@ figure{
 
 }
 
-
 .img-wrapper-6 {
   width: 100%;
-  margin: 5px 0 0;
-  padding: 0 5px 0;
+  margin: 0 0 5px;
 }
 
 .img-wrapper-7 {
-  width: 33.3333%;
-  margin: 40px 0 0;
-  padding: 0 5px 0;
+  width: 100%;
+  margin: 40px 0 5px;
 }
 .img-wrapper-5 {
   width: 20%;
@@ -47,12 +44,7 @@ figure{
   padding: 0 5px 0;
 }
 
-.gallery {
-  width: 100%;
-  margin: 0 -5px 5px;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 
 
