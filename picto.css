@@ -23,9 +23,7 @@ figure{
   display: block;
 }
 
-figcaption{
-  padding-right: 30%;
-}
+
 
 .img-wrapper-1 {
   width: 100%;
@@ -126,7 +124,9 @@ p.head {
   line-height: 1.2;
 }
 
-
+p.desc a {
+  color: black;
+}
 
 p.desc {
   margin-top: 20px;
@@ -156,10 +156,17 @@ figcaption {
   padding-top: 5px;
   margin-top: 5px;
   margin-bottom: 15px;
+  margin-left: 40%;
+
 }
+
 
 figcaption span {
   font-weight: 500;
+}
+
+figcaption a {
+  color: black;
 }
 
 /* 
