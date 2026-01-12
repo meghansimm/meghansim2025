@@ -54,7 +54,12 @@ video {
 
 }
 
-.img-wrapper div:hover {
+.img-wrapper:nth-child(5) img {
+  cursor: not-allowed;
+
+}
+
+.img-wrapper:not(:nth-child(5)) div:hover {
   background: 
   linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
   linear-gradient(90deg, #333 50%, transparent 0) repeat-x,
