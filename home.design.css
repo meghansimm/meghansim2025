@@ -54,7 +54,7 @@ video {
 
 }
 
-.img-wrapper:nth-child(5) img {
+.img-wrapper:nth-child(5) img { 
   cursor: not-allowed;
 
 }
