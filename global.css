@@ -148,6 +148,7 @@ h1 a {
 }
 h2 a {
   color: black;
+  text-decoration: none;
 }
 h2 a:hover{
   background: magenta;
@@ -194,6 +195,7 @@ h2 {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.5;
+  text-decoration: none;
 }
 
 .more {
