@@ -240,6 +240,7 @@ label {
   transition: 0.5s ease-in-out;
   padding-right: 10px;
   margin: -10px 0 0;
+  opacity: 0;
 }
 input {
 display: none;
@@ -247,7 +248,8 @@ display: none;
 
 input:checked ~ .accordion {
   color: black;
-  max-height: 100vh
+  max-height: 100vh;
+  opacity: 1;
 }
 
 input:checked ~ .desc {
@@ -263,7 +265,8 @@ input:checked + .accordion + .more-wrapper .less {
 }
 
 input:checked ~ .side-nav {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 
@@ -305,7 +308,7 @@ input:checked ~ .side-nav {
 /* 
 =SIDE NAV
 ==================================*/
-nav.side-nav {
+.side-nav {
   font-size: 13px;
   font-weight: 300;
   width: 17%;
@@ -314,6 +317,8 @@ nav.side-nav {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 
 nav.side-nav a {
