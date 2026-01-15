@@ -164,7 +164,7 @@ h2 a:hover{
   background: magenta;
   color: white;
   border-radius: 3px;
-}
+} 
 
 label:hover ~ h2 span {
   background-color: magenta;
