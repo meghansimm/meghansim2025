@@ -223,6 +223,7 @@ Mobile
     flex-direction: column;
     width: 22%;
     border-top: black 1px solid;
+    padding-right: 10px;
   }
   .img-wrapper-3 {
     padding: 20px 10px 20px;
